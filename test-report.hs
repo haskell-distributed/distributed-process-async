@@ -1,10 +1,12 @@
-#! /bin/sh
+#!/bin/sh
+
+CABAL=${CABAL:cabal}
 
 HPC_DIR=dist/hpc
 
-cabal-dev clean
-cabal-dev configure --enable-tests --enable-library-coverage
-cabal-dev build
-cabal-dev test
+${CABAL} clean
+${CABAL} configure --enable-tests --enable-library-coverage
+${CABAL} build
+${CABAL} test
 
 open ${HPC_DIR}/html/*/hpc-index.html
