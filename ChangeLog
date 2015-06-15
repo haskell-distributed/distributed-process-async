@@ -1,3 +1,9 @@
+2015-06-15 Facundo Domínguez <facundo.dominguez@tweag.io> 0.2.2
+
+* Add compatibility with ghc-7.10.
+* Use random port in tests.
+* Fix dependency bounds.
+
 # HEAD
 
 * Added initial GenServer module
